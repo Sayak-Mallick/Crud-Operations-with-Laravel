@@ -1,6 +1,15 @@
 @extends('employees.layout')
 @section('content')
  
+
+<div class="wrapper">
+    <div class="menu">
+        <a href="{{ url('/employee') }}" class="btn btn-primary" title="Add New Student">
+                  GO BACK</a>
+                  <br><br>
+    </div>
+</div>
+
 <div class="wrapper">
   <div class="main-content">
    <h2 class="text-center success">EDIT Employees</h2>
