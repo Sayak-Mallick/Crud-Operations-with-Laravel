@@ -69,7 +69,7 @@ table tr td{
 .btn-secondary{
     background-color: #7bed9f;
     padding: 1%;
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }

@@ -1,9 +1,10 @@
 @extends('employees.layout')
 @section('content')
+
     <div class="wrapper">
         <div class="main-content">
             <div class="card-header text-center">
-                <h2>Employee CRUD</h2>
+                <h2 style='color:white;' class="btn-secondary">Employee CRUD</h2>
                 <br>
             </div>
             <div class="card-body">

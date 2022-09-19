@@ -4,7 +4,7 @@
  
 <div class="wrapper">
   <div class="main-content">
-    <h2 class="text-center error">Details about {{ $employees->name }}</h2>
+    <h2 class="text-center btn-danger">Details about {{ $employees->name }}</h2>
     <br>
     <br>
   <div class="container">
