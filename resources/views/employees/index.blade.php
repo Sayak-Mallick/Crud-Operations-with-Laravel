@@ -38,13 +38,13 @@ table, th, td {
             <td>{{ $item->age }}</td>
             <td>{{ $item->salary }}</td>
             <td>
-                <a href="{{ url('/employee/' . $item->id) }}" title="View Employees"><button class="btn-"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                <a href="{{ url('/employee/' . $item->id . '/edit') }}" title="Edit Employee"><button class="btn-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                <a href="{{ url('/employee/' . $item->id) }}" title="View Employees"><button class="btn-primary">View</button></a>
+                <a href="{{ url('/employee/' . $item->id . '/edit') }}" title="Edit Employee"><button class="btn-secondary">Edit</button></a>
 
                 <form method="POST" action="{{ url('/employee' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
-                    <button type="submit" class="btn-danger" title="Delete Employee" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
+                    <button type="submit" class="btn-danger" title="Delete Employee" onclick="return confirm(&quot;Confirm delete?&quot;)">Delete</button>
                 </form>
             </td>
         </tr>
