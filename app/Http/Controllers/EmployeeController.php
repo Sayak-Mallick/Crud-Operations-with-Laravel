@@ -20,12 +20,16 @@ class EmployeeController extends Controller
         return view('employees.create');
     }
 
+    public function make()
+    {
+        
+    }
     
     public function store(Request $request)
     {
         $input = $request->all();
         Employee::create($input);
-        return redirect('employee')->with('flash_message', "Employee Added");
+        return redirect('employee')->with('success', "Employee Added");
     }
 
     
@@ -48,12 +52,12 @@ class EmployeeController extends Controller
         $employee = Employee::find($id);
         $input = $request->all();
         $employee->update($input);
-        return redirect('employee')->with('flash_message', 'Employee Updated !!!');
+        return redirect('employee')->with('success', 'Employee Updated !!!');
     }
 
     public function destroy($id)
     {
         Employee::destroy($id);
-        return redirect('employee')->with('flash_message', 'Employee Deleted !!!');
+        return redirect('employee')->with('success', 'Employee Deleted !!!');
     }
 }

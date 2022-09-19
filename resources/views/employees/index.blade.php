@@ -38,7 +38,7 @@ table, th, td {
             <td>{{ $item->age }}</td>
             <td>{{ $item->salary }}</td>
             <td>
-                <a href="{{ url('/employee/' . $item->id) }}" title="View Employees"><button class="btn-primary"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                <a href="{{ url('/employee/' . $item->id) }}" title="View Employees"><button class="btn-"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
                 <a href="{{ url('/employee/' . $item->id . '/edit') }}" title="Edit Employee"><button class="btn-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                 <form method="POST" action="{{ url('/employee' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
