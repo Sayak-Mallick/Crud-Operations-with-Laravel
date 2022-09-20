@@ -5,17 +5,14 @@
 <div class="wrapper">
   <div class="main-content">
     <h2 class="text-center btn-danger">Details about {{ $employees->name }}</h2>
+    <br><a href="{{ url('/employee') }}" class="btn btn-primary" title="Add New Student">
+                  GO BACK</a>
     <br>
-    <br>
+      
   <div class="container">
     
 
 <style>
-
-.container {
-  justify-content: center;
-  align-items: center;
-}
 
 table, th, td {
   border: 1px solid black;
@@ -42,14 +39,7 @@ table.center {
                     <td>Salary</td>
                     <td>{{ $employees->salary }}</td>
                 </tr>
-                <!-- <tr>
-                    <td></td>
-                    <td><button type="submit" class="btn-secondary text-center">Save</button></td>
-                </tr> -->
             </table>
-        <!-- <h5 class="card-title">Name : </h5>
-        <p class="card-text">Age : </p>
-        <p class="card-text">Salary : </p> -->
   </div>
      </div>  
     </hr>

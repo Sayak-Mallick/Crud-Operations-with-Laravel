@@ -3,12 +3,12 @@
 
     <div class="wrapper">
         <div class="main-content">
-            <div class="card-header text-center">
+            <div class="text-center">
                 <h2 style='color:white;' class="btn-secondary">Employee CRUD</h2>
                 <br>
             </div>
-            <div class="card-body">
-                <a href="{{ url('/employee/create') }}" class="btn btn-primary" title="Add New Student">
+            <div>
+                <a href="{{ url('/employee/create') }}" class="btn-primary" title="Add New Employee">
                   Add New</a>
                 <br/>
                 <br/>
@@ -42,10 +42,10 @@ table, th, td {
                 <a href="{{ url('/employee/' . $item->id) }}" title="View Employees"><button class="btn-primary">View</button></a>
                 <a href="{{ url('/employee/' . $item->id . '/edit') }}" title="Edit Employee"><button class="btn-secondary">Edit</button></a>
 
-                <form method="POST" action="{{ url('/employee' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                <form method="POST" action="{{ url('/employee' . '/' . $item->id) }}" style="display:inline">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
-                    <button type="submit" class="btn-danger" title="Delete Employee" onclick="return confirm(&quot;Confirm delete?&quot;)">Delete</button>
+                    <button type="submit" class="btn-danger" title="Delete Employee" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
                 </form>
             </td>
         </tr>

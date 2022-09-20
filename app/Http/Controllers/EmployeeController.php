@@ -20,10 +20,6 @@ class EmployeeController extends Controller
         return view('employees.create');
     }
 
-    public function make()
-    {
-        
-    }
     
     public function store(Request $request)
     {
