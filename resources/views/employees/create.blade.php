@@ -45,6 +45,7 @@ input {
                     <td>Salary: </td>
                     <td><input type="text" name="salary" id="salary" class="form-control"></td>
                 </tr>
+                
                 <tr>
                     <td></td>
                     <td><button type="submit" class="btn-secondary text-center">Save</button></td>
