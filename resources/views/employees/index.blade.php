@@ -45,7 +45,7 @@ table, th, td {
                 <form method="POST" action="{{ url('/employee' . '/' . $item->id) }}" style="display:inline">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
-                    <button type="submit" class="btn-danger" title="Delete Employee" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
+                    <button type="submit" class="btn-danger"  onclick="return confirm('Are you sure you want to delete?')">Delete</button>
                 </form>
             </td>
         </tr>
